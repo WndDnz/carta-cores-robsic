@@ -1,0 +1,70 @@
+\documentclass[a4paper, foldmark, notumble]{leaflet}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{tikz}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{lipsum}
+
+\definecolor{primary}{HTML}{6CC24A}
+\definecolor{secondary}{HTML}{6E7CA0}
+\definecolor{accent}{HTML}{003A70}
+\definecolor{alert}{HTML}{DA291C}
+
+\title{Carta de Cores Oficiais do RobSIC}
+
+
+\AddToBackground{1}{\tikz \fill [primary] (0,0) rectangle (4,10);}
+
+\begin{document}
+
+\maketitle
+
+\lipsum[1-2]
+
+\pagebreak
+
+\section{Cor Principal}
+\begin{center}
+
+  \tikz \fill [primary] (0,0) rectangle (4,4);
+  \vskip3mm
+  {\large\bfseries Pantone 360 C}\\
+  {\large\bfseries RGB \#6cc24a}
+\end{center}
+
+\pagebreak
+
+\section{Cor Secundária}
+\begin{center}
+
+  \tikz \fill [secondary] (0,0) rectangle (4,4);
+  \vskip3mm
+  {\large\bfseries Pantone 360 C}\\
+  {\large\bfseries RGB \#6E7CA0}
+\end{center}
+
+\pagebreak
+
+\section{Cor de Destaque}
+\begin{center}
+
+  \tikz \fill [accent] (0,0) rectangle (4,4);
+  \vskip3mm
+  {\large\bfseries Pantone 360 C}\\
+  {\large\bfseries RGB \#003A70}
+\end{center}
+
+\pagebreak
+
+\section{Cor de Alerta}
+\begin{center}
+
+  \tikz \fill [alert] (0,0) rectangle (4,4);
+  \vskip3mm
+  {\large\bfseries Pantone 360 C}\\
+  {\large\bfseries RGB \#DA291C}
+\end{center}
+
+
+\end{document}
